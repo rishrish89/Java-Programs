@@ -1,11 +1,11 @@
 class Tester {
 	public static void main(String[] args) {
-	   int date =31;
-	   int month =12;
-	   int year = 15;
+	   int date =28;
+	   int month =2;
+	   int year = 17;
 	   boolean even = false;
 	   boolean odd = false;
-	   if(date%2 == 0){
+	   if(month %2 == 0){
 	       even = true;
 	   }
 	   else{
@@ -19,6 +19,10 @@ class Tester {
 	       else if(date == 31){
 	           System.out.println("Wrong date");
 	       }
+	       else if(month == 2 &&  date == 28){
+	           date =1;
+	           month++;
+	       }
 	       else{
 	           date++;
 	       }
@@ -26,6 +30,10 @@ class Tester {
 	   else if(date <= 31 && odd == true && month <= 7){
 	       if(date == 31){
 	           date = 1;
+	           month++;
+	       }
+	        else if(month == 2 &&  date == 28){
+	           date =1;
 	           month++;
 	       }
 	       else{
@@ -44,6 +52,10 @@ class Tester {
 	               year++;
 	           }
 	       }
+	       else if(month == 2 &&  date == 28){
+	           date =1;
+	           month++;
+	       }
 	       else{
 	           date++;
 	       }
@@ -59,10 +71,16 @@ class Tester {
 	       else if(date == 31){
 	           System.out.println("Wrong date");
 	       }
+	       else if(month == 2 &&  date == 28){
+	           date =1;
+	           month++;
+	       }
 	       else{
 	           date++;
 	       }
 	   }
+	  
+	   
 	   
 	   System.out.println(date +"-"+ month + "-20" + year);
 	 
@@ -77,4 +95,3 @@ class Tester {
 	    
 	}
 }
-
